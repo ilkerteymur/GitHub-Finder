@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Finder</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-dark text-bg-dark">
+    <!-- Header START -->
+    <header class="navbar navbar-dark p-3">
+        <div class="container">
+            <a href="/" class="navbar-brand">GitHub Finder</a>
+            <button class="btn btn-light">Light Mode</button>
+        </div>
+    </header>
+    <!-- Header END -->
+
+    <!-- Form Section START -->
+
+    <div class="container mt-4">
+        <div class="border p-3">
+            <h1>GitHub Username Search</h1>
+            <p>
+                kullanıcı bilgilerine erişmek için bir kullanıcı adı giriniz.
+            </p>
+            <div class="d-flex gap-3">
+                <input id="search-input" class="form-control" type="text">
+                <button id="search-btn" class="btn btn-primary btn-lg">Search</button>
+            </div>
+        </div>
+    </div>
+    <!-- Form Section END -->
+
+
+    <!-- User information section START -->
+        <div id="profile" class="container p-4"></div>
+    <!-- User information section END -->
+
+
+    <!-- User Projects START -->
+    <div id="repos" class="container p-3"></div>
+    <!-- User Projects END -->
+
+    <!-- Js bağlantı -->
+    <script src="app.js" type="module"></script>
+</body>
+</html>
