@@ -3,6 +3,7 @@ export class UI{
     constructor() {
        this.profile = document.querySelector("#profile");
        this.repoArea = document.querySelector("#repos");
+       this.alertArea = document.querySelector("#alert-area")
 
 }
 
@@ -54,5 +55,32 @@ export class UI{
         </div>
             `;
         });
+    }
+
+
+    // bildirim kutusunu ekrana basma
+    showAlert(message, classname){
+    // uyarı div i oluşturma
+      const div = document.createElement("div")
+
+    // uyarı mesajını ekleme
+      div.innerText = message;
+
+    // div'e class ekleme
+      div.classList.add("alert");
+
+    // div'e dnamik class'ı ekleme
+      div.classList.add(classname);
+
+    // eski uyarıyı temizleme
+    this.alertArea.innerHTML = "";
+
+    // uyarıyı html'e gönderme
+    this.alertArea.appendChild(div);
+
+    // setTimeout : kendisine verilen fonksiyonu belirli bir süre sonra çalıştırır
+    setTimeout(()=>{
+        div.remove();
+    },3000);
     }
 }

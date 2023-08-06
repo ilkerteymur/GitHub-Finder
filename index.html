@@ -9,10 +9,10 @@
 </head>
 <body class="bg-dark text-bg-dark">
     <!-- Header START -->
-    <header class="navbar navbar-dark p-3">
-        <div class="container">
+    <header class="navbar navbar p-3">
+         <div class="container">
             <a href="/" class="navbar-brand">GitHub Finder</a>
-            <button class="btn btn-light">Light Mode</button>
+            <button id="theme-btn" class="btn btn-light">Light Mode</button>
         </div>
     </header>
     <!-- Header END -->
@@ -20,10 +20,11 @@
     <!-- Form Section START -->
 
     <div class="container mt-4">
+        <div id="alert-area"></div>
         <div class="border p-3">
             <h1>GitHub Username Search</h1>
             <p>
-                kullanıcı bilgilerine erişmek için bir kullanıcı adı giriniz.
+                Enter a username to access user information.
             </p>
             <div class="d-flex gap-3">
                 <input id="search-input" class="form-control" type="text">

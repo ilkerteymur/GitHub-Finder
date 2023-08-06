@@ -1,15 +1,16 @@
+# GitHub Finder Site Project 
+
 # Kaynaklar
 - Api: https://api.github.com/users
 
+## What i practice
 
-# Yapılacaklar
+- Api 
 
-- input alanına girilen ismi ara butonuna tıklanılınca al.
-- - isim alanı boş mu kontrol et ,doluysa:
-- - `Api` linkinin sonuna kullanıcı ismini ekle ve istek at.
-- - Kullanıcı bilgilerini al
-- - bu bilgilerle profil alanını ekrana bas (render)
+## `URL`
 
-- Repo bilgilerini al
-- - kullanıcı aratılınca `Api` linkine `kullanıcı adı / repos` ekleyip istek at
-- - gelen projeler dizisndeki her bir eleman için ekrana proje kartı bas# GitHub-Finder
+https://reliable-piroshki-34b931.netlify.app/
+
+## `Screen`
+
+![](screen.gif)
